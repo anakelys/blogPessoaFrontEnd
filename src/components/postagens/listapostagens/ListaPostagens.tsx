@@ -6,6 +6,7 @@ import Postagem from "../../../models/Postagem";
 import { buscar } from "../../../services/Service";
 import { DNA } from "react-loader-spinner";
 
+
 function ListaPostagens() {
 
     const navigate = useNavigate();
@@ -32,7 +33,7 @@ function ListaPostagens() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado')
+            
             navigate('/');
         }
     }, [token])
